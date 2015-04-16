@@ -37,7 +37,7 @@ set -e
 #/                      used, otherwise php.ini-<env> from the source
 #/                      distribution is used. Defaults to "production".
 #/   --pear             Install PEAR alongside of Pyrus (experimental)
-#/   -v|--version       Display version information and exit
+#/   -V|--version       Display version information and exit
 #/
 #
 # Usage message done like [shocco](https://github.com/rtomayko/shocco)
@@ -741,7 +741,7 @@ if [ -z $1 ] || [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     exit
 fi
 
-if [ "$1" = "-v" ] || [ "$1" = "--version" ]; then
+if [ "$1" = "-V" ] || [ "$1" = "--version" ]; then
     display_version
     exit
 fi
