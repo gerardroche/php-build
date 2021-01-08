@@ -1,4 +1,10 @@
+configure_option "--enable-calendar"
+configure_option "--enable-sysvmsg"
 configure_option "--without-pear"
+configure_option "--with-gettext"
+configure_option "--with-mhash"
+configure_option "--with-sodium"
+configure_option "--with-zip"
 configure_option "--with-gd"
 configure_option "--with-png-dir" "/usr"
 configure_option "--with-jpeg-dir" "/usr"
@@ -6,4 +12,6 @@ configure_option "--enable-zip"
 
 install_package "https://secure.php.net/distributions/php-7.2.34.tar.bz2"
 install_xdebug "3.0.2"
+install_pcov "1.0.6"
+install_ast "1.0.10"
 enable_builtin_opcache

@@ -1,4 +1,7 @@
+configure_option "--enable-calendar"
 configure_option "--enable-gd"
+configure_option "--enable-sysvmsg"
+configure_option "--with-gettext"
 configure_option "--with-jpeg"
 configure_option "--with-zip"
 configure_option "--with-mhash"
@@ -7,4 +10,6 @@ configure_option -D "--with-xmlrpc"
 
 install_package "https://secure.php.net/distributions/php-8.0.2.tar.bz2"
 install_xdebug "3.0.2"
+install_pcov "1.0.6"
+install_ast "1.0.10"
 enable_builtin_opcache
