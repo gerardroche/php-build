@@ -5,8 +5,14 @@ configure_option "--with-mhash"
 
 configure_option -D "--with-xmlrpc"
 
+configure_option "--enable-calendar"
+configure_option "--enable-sysvmsg"
+configure_option "--with-gettext"
+
 patch_file "php-8.0-support-openssl-3.patch"
 
 install_package "https://www.php.net/distributions/php-8.0.30.tar.bz2"
-install_xdebug "3.3.1"
+install_xdebug "3.2.2"
+install_pcov
+install_ast
 enable_builtin_opcache

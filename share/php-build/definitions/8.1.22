@@ -5,6 +5,12 @@ configure_option "--with-mhash"
 
 configure_option -D "--with-xmlrpc"
 
+configure_option "--enable-calendar"
+configure_option "--enable-sysvmsg"
+configure_option "--with-gettext"
+
 install_package "https://www.php.net/distributions/php-8.1.22.tar.bz2"
-install_xdebug "3.3.1"
+install_xdebug "3.2.2"
+install_ast
+install_pcov
 enable_builtin_opcache

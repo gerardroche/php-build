@@ -6,6 +6,16 @@ configure_option "--enable-zip"
 
 patch_file "php-8.0-support-openssl-3.patch"
 
+configure_option "--enable-calendar"
+configure_option "--enable-gd"
+configure_option "--enable-sysvmsg"
+configure_option "--with-gettext"
+configure_option "--with-mhash"
+configure_option "--with-sodium"
+configure_option "--without-imap"
+
 install_package "https://secure.php.net/distributions/php-7.3.33.tar.bz2"
 install_xdebug "3.1.6"
+install_pcov
+install_ast
 enable_builtin_opcache
